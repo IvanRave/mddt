@@ -36,8 +36,3 @@ type GeoAgglo struct {
 	Tag2        *string     `json:"tag2" summary:"secondary tag"`
 //    ArrGeoRegion    []*GeoRegion    `json:"arr_geo_region,omitempty" summary:"regions in this agglomeration"`
 }
-
-type AggloScope struct {
-    Total       int32       `json:"total" summary:"total number of items"`
-    ArrGeoAgglo []*GeoAgglo `json:"arr_geo_agglo" summary:"agglomerations"`
-}
