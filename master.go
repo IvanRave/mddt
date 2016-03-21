@@ -20,6 +20,8 @@ type MasterProfile struct {
 	ExpEntire     *int16         `json:"exp_entire" summary:"entire expirience, in months"`
 	ExpPrivate    *int16         `json:"exp_private" summary:"exp as self employed, in months"`
 	IsCompany     *bool   `json:"is_company" summary:"Whether the master is company"`
+	VkId          *int32  `json:"vk_id" summary:"VK id"`
+	OkId          *int64  `json:"ok_id" summary:"OK id"`
 	NstgId        *string `json:"nstg_id" summary:"id of public profile from nstg"`
 	UserName      *string `json:"username" summary:"unique username"`
 	Website       *string `json:"website" summary:"website url"`
