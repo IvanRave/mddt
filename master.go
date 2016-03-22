@@ -42,7 +42,8 @@ type MasterProfile struct {
 	LastName      *string `json:"lname" summary:"last name"`
 	FirstName     *string `json:"fname" summary:"first name"`
 	MiddleName    *string `json:"mname" summary:"middle name"`
-	Avatar        *string `json:"avatar" summary:"url to avatar image"`
+	Avatar        *string `json:"avatar" summary:"url to avatar image, usually 150px or 200px width"`
+	AvatarPreview *string `json:"avatar_preview" summary:"small image (usually 50px width, to show in lists"`
 	
 	MasterAddress *MasterAddress `json:"master_address,omitempty" summary:"address with coords and place"`
 	ArrMasterServ []*MasterServ  `json:"arr_master_serv,omitempty" summary:"master services"`
