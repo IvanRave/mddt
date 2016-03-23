@@ -10,8 +10,8 @@ type MasterServ struct {
 	PriceFrom       *int32      `json:"price_from" summary:"min price"`
 	PriceTo         *int32      `json:"price_to" summary:"max price"`
 	CurrencyId      *string     `json:"currency_id" summary:"currency for a price value, 3-letter id"`
-	TimeFrom        *int32      `json:"time_from" summary:"min time for work, in seconds"`
-	TimeTo          *int32      `json:"time_to" summary:"max time for work, in seconds"`
+	TimeFrom        *int32      `json:"time_from" summary:"min time for work, in minutes"`
+	TimeTo          *int32      `json:"time_to" summary:"max time for work, in minutes"`
 	IsOut           bool        `json:"is_out" summary:"whether the service provided out of home"`
 	ArrServWork     []*ServWork `json:"arr_serv_work,omitempty" summary:"portfolio"`
 	MasterProfile   *MasterProfile `json:"master_profile,omitempty" summary:"parent: master profile"`

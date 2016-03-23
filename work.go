@@ -6,7 +6,7 @@ type ServWork struct {
 	Name         *string `json:"name" summary:"localized name"`
 	Description  *string `json:"description" summary:"localized description"`
 	Created      *int32  `json:"created" summary:"when a work finished, utc timestamp"`
-	ActualTime   *int32  `json:"actual_time" summary:"used time for work, in seconds"`
+	ActualTime   *int32  `json:"actual_time" summary:"used time for work, in minutes"`
 	ActualPrice  *int32  `json:"actual_price" summary:"actual price for work, in currency"`
 	CurrencyId   *string `json:"currency_id" summary:"currency for a price value, 3-letter id"`
 	PreviewImg   *string `json:"preview_img" summary:"url to a small image to show as a preview"`
