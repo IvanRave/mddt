@@ -37,5 +37,8 @@ type GeoAgglo struct {
     LocaleId    string      `json:"locale_id" summary:"two-letter id"`
 	Tag1        *string     `json:"tag1" summary:"primary tag"`	
 	Tag2        *string     `json:"tag2" summary:"secondary tag"`
+	CaseGenitive      *string    `json:"case_genitive"`
+	CaseAccusative    *string    `json:"case_accusative"`
+	CasePrepositional *string    `json:"case_prepositional"`
 	//    ArrGeoRegion    []*GeoRegion    `json:"arr_geo_region,omitempty" summary:"regions in this agglomeration"`
 }
